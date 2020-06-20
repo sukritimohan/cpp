@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+struct bike
+{
+int lno;
+char driver[25];
+double miles;
+};
+int main()
+{
+  int i;
+  bike b[3];
+  for(i=0;i<3;i++)
+  {
+  cout<<"Enter the following details of driver"<<i<<":\n1.Licence no.:\t";
+  cin>>b[i].lno;
+  cout<<"\n2.Name of driver:\t";
+  cin>>b[i].driver;
+  cout<<"\n3.No.of miles:\t";
+  cin>>b[i].miles;
+  }
+  for(i=0;i<3;i++)
+  {
+  cout<<"\nYou entered for driver"<<i<<":\n"<<"1.Licence no:"<<b[i].lno<<endl;
+  cout<<"2.Name of driver:"<<b[i].driver<<endl;
+  cout<<"3.No.of miles:"<<b[i].miles;
+  }
+  return 0;
+  }
+
+
