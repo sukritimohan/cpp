@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+class time{
+    private :
+    int h;
+    int m;
+    int s;
+    public:
+    void inputdata();
+    void displaytime();
+    int calculatetime();
+};
+void time::inputdata()
+{
+    cout<<"Enter details:"<<endl;
+    cout<<"Hours?:";
+    cin>>h;
+    cout<<"\nMinutes?:";
+    cin>>m;
+    cout<<"\nSeconds?:";
+    cin>>s;
+}
+void time:: displaytime()
+{
+cout<<"Total time is: "<<h<<":"<<m<<":"<<s<<endl;
+}
+int time::calculatetime()
+{
+    int t=0;
+ t=h*3600+m*60+s;
+ return t;
+}
+int main()
+{
+    time t1;
+    t1.inputdata();
+    t1.displaytime();
+    cout<<"Total time in seconds is: "<<t1.calculatetime();
+}
+
+
